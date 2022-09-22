@@ -32,9 +32,18 @@ describe('TodoStore', function () {
 
         it('should sort todos by status', function () {
             // Add 3 todos
+            store.addTodo('Todo 1');
+            store.addTodo('Todo 2');
+            store.addTodo('Todo 3');
+
             // Set the second one to done
+            store.setDone(1);
+
             // Verify that the second one is last in the list
+            expect(store.todos[2].description).toBe('Todo 2');
+
             // Verify that the last one is done
+            expect(store.todos[2].done).toBe(true);
         });
 
     });
