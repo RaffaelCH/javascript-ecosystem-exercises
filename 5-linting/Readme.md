@@ -1,6 +1,6 @@
 # Lesson: Linting
 ## Todo
-1. Run Todo App
+1. Run Todo App // npm install, npm run build, cd dist, npx http-server
 1. Add Todo and check console log in dev tools
 1. Install eslint with npm as dev dependency
 1. Initialize eslint -> npm init @eslint/config
